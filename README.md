@@ -1,4 +1,4 @@
-```markdown
+
 #  Nhận Diện Ngôn Ngữ Ký Hiệu Thời Gian Thực (Real-time Sign Language Recognition)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
