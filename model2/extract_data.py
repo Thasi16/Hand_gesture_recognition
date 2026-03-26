@@ -7,7 +7,6 @@ from config import VIDEO_PATH, JSON_PATH, KEYPOINT_PATH, MAX_FRAMES
 from utils import extract_keypoints, pad_sequence
 
 def main():
-    print("🚀 Đang tải metadata...")
     with open(JSON_PATH, "r") as f:
         metadata = json.load(f)
 
@@ -19,7 +18,6 @@ def main():
     )
 
     X_list, y_list = [], []
-    print("🚀 Bắt đầu cày dữ liệu chuẩn hóa...")
 
     for video_id, info in tqdm(metadata.items()):
         label = info["action"][0]
@@ -59,7 +57,7 @@ def main():
     np.save("X_data.npy", X)
     np.save("y_data.npy", y)
     
-    print(f"\n✅ Xong! Đã lưu file X_data.npy {X.shape} và y_data.npy {y.shape}")
+    print(f"\n Xong! Đã lưu file X_data.npy {X.shape} và y_data.npy {y.shape}")
 
 if __name__ == "__main__":
     main()
