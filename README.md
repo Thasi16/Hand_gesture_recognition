@@ -83,7 +83,4 @@ pred_label = np.argmax(res)
 * File `.npy` của video thiếu sẽ gây lỗi khi dự đoán, nên **bắt buộc tạo keypoints trước**.
 * Model dự đoán ra **Class ID**, có thể map sang chữ bằng `wlasl_class_list.txt`.
 
----
 
-Nếu muốn, mình có thể viết **bản README cực ngắn kiểu “1 trang, đọc là hiểu cách chạy”**, tối ưu cho người mới tải về project và chạy trực tiếp.
-Em có muốn mình làm luôn không?
